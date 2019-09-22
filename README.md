@@ -1,7 +1,4 @@
-## 🧘 Website
-
-The website is deployed with Netlify and can be accessed here:
-[Yogi Librari](https://yogilibrary.com/)
+# Gatsby starter tailwindcss googlesheets
 
 To skip continuous deployment enter `[skip ci]` in commit message.
 
