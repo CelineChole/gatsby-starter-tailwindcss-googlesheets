@@ -1,5 +1,6 @@
 require("dotenv").config()
 
+// Credentials when you deploy your site
 const sheetCredentials = {
   client_email: process.env.GS_CLIENT_EMAIL || ``,
   private_key: process.env.GS_PRIVATE_KEY.replace(/\\n/g, '\n') || ``,
@@ -7,15 +8,16 @@ const sheetCredentials = {
 
 module.exports = {
   siteMetadata: {
-    title: `Yogi Library`,
-    description: `A video library for yoga lovers`,
+    title: `gatsby-starter-tailwindcss-googlesheets`,
+    description: `A starter to easily creates library from Google Sheets`,
     author: `Céline Cholé`,
   },
   plugins: [
+    // Easily add Google Analytics to your site
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-38000692-4",
+        // trackingId: "enter your tracking id from Google analytics",
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -31,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `yogi-library`,
-        short_name: `Yogi Library`,
+        name: `gatsby-starter-tailwindCSS-googlesheets`,
+        short_name: `gatsby-starter-googlesheets`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -40,12 +42,16 @@ module.exports = {
         icon: `src/images/yogi-icon.png`, // This path is relative to the root of the site.
       },
     },
+    // It handles PostCSS
+    // To learn more, visit: https://www.gatsbyjs.org/packages/gatsby-plugin-postcss/
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
       },
     },
+    // Remove unused css from css/sass/less/stylus files and modules 
+    // To learn more, visit: https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
@@ -54,6 +60,8 @@ module.exports = {
         tailwind: true,
       },
     },
+    // Turns any Google Sheets worksheet into a GraphQL type for build-time consumption
+    // To learn more, visit: https://www.gatsbyjs.org/packages/gatsby-source-google-sheets/
     {
       resolve: "gatsby-source-google-sheets",
       options: {
