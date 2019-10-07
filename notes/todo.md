@@ -1,46 +1,15 @@
----
-tags:
-  - todo
----
+<!-- Enter your todo and your resources here -->
 
 # todo
 
-## Version 1
+## Urgent
 
-- [x] Create or choose a Gatsby Template
-- [x] Create Google sheet:
-  - [x] Link to the video
-  - [x] id
-  - [x] Thumbnail
-  - [x] Title
-  - [x] Tags
-  - [x] Level
-- [x] Create About page
-- [x] Create queries to filter
-- [x] videoCard small and large - hide unsued elements
-- [x] Display all the tags one by one
-- [x] Deploy with Netlify
+- [x] task done
+- [] to do
 
-***
 
-## version 2
-- [ ] Refactor template pages
-- [ ] Change size of switch button on mobile - write media query in styles file
-      `@media lg { @apply .text-size-5; }`
-- [ ] Add a not watched column in the Google sheet and display a flag / add info about that in the About page
+## Future development
+- [ ] task 1
+- [ ] task 2
 
-- [ ] Write Readme
-- [ ] Writing to do for each YouTube channel
-- [ ] Video page
-  - [ ] Exact time of the beginning of the video
-  - [ ] Short description
-
-- [ ] Create a Gatsby template with TailwindCSS
-
-***
-
-## Future
-
-- [ ] Yoga poses library
-  - [PocketYoga](https://pocketyoga.com/pose/)
-  - [Yoga Journal](https://www.yogajournal.com/poses)
+## Resources
