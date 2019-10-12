@@ -9,6 +9,7 @@ Select Web server and click Application data
 Name the service and grant it a Project role of Editor
 Download the JSON file
 Open the file in VS code in your Gatsby project and rename to client_secret.json
+You don't need to client_secret file if you use .env file (which is needed for Netlify) - I need to create .env-sample file - people need to remove sample and add their stuff
 
 Website theme
 The CSS is done using Tailwind. In `gatsby-browser` file we ...
