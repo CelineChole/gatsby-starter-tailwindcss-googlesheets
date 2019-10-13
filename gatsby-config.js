@@ -65,7 +65,7 @@ module.exports = {
     {
       resolve: "gatsby-source-google-sheets",
       options: {
-        spreadsheetId: "13IimtmNvcrVqcvz8C2y-oxrBNRRvgityF1D9r70es1E",
+        spreadsheetId: "1QTqP4JGXVClicok6u02CelP2Z4JBFelJr7VpWBYpov4",
         worksheetTitle: "Master",
         credentials: sheetCredentials,
       },

@@ -1,7 +1,7 @@
 ## 🧘 Website
 
 create file client_secret.json
-Go to the Google API console
+Go to the Google API console: https://console.developers.google.com/
 Create a new project by clicking on My Project
 Click enable API, search for and enable the Google Drive API.
 Click on Credentials and create credentials, then help me choose
@@ -10,6 +10,8 @@ Name the service and grant it a Project role of Editor
 Download the JSON file
 Open the file in VS code in your Gatsby project and rename to client_secret.json
 You don't need to client_secret file if you use .env file (which is needed for Netlify) - I need to create .env-sample file - people need to remove sample and add their stuff
+Spreadsheet id in Gatsby config, go to your spreadsheet and copy-paste the url after `/d` and before `/edit`
+Name the tab of your spreadsheet or update the name in the config file
 
 Website theme
 The CSS is done using Tailwind. In `gatsby-browser` file we ...
